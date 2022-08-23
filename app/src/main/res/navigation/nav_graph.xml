@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginScreenFragment">
+
+    <fragment
+        android:id="@+id/loginScreenFragment"
+        android:name="com.example.egypt_fwdproject1.LoginScreenFragment"
+        android:label="Login Page"
+        tools:layout="@layout/fragment_login_screen">
+        <action
+            android:id="@+id/action_loginScreenFragment_to_welcomeScreenFragment"
+            app:destination="@id/welcomeScreenFragment" />
+        <action
+            android:id="@+id/action_loginScreenFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeScreenFragment"
+        android:name="com.example.egypt_fwdproject1.ui.activities.WelcomeScreenFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome_screen" >
+        <action
+            android:id="@+id/action_welcomeScreenFragment_to_instractionsScreenFragment"
+            app:destination="@id/instractionsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instractionsScreenFragment"
+        android:name="com.example.egypt_fwdproject1.ui.activities.InstractionsScreenFragment"
+        android:label="Instractions Page"
+        tools:layout="@layout/fragment_instractions_screen" >
+        <action
+            android:id="@+id/action_instractionsScreenFragment_to_shoeListingScreenFragment"
+            app:destination="@id/shoeListingScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeListingScreenFragment"
+        android:name="com.example.egypt_fwdproject1.ui.activities.ShoeListingScreenFragment"
+        android:label="Shoe Store Page"
+        tools:layout="@layout/fragment_shoe_listing_screen" >
+        <action
+            android:id="@+id/action_shoeListingScreenFragment_to_shoeDetailScreenFragment"
+            app:destination="@id/shoeDetailScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoeDetailScreenFragment"
+        android:name="com.example.egypt_fwdproject1.ui.activities.ShoeDetailScreenFragment"
+        android:label="Add New Shoe"
+        tools:layout="@layout/fragment_shoe_detail_screen" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.egypt_fwdproject1.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginScreenFragment"
+            app:destination="@id/loginScreenFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "416470617556",
+    "firebase_url": "https://egypt-fwd-default-rtdb.firebaseio.com",
+    "project_id": "egypt-fwd",
+    "storage_bucket": "egypt-fwd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416470617556:android:76ada08abf54a036d7da41",
+        "android_client_info": {
+          "package_name": "com.example.egypt_fwdproject1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416470617556-gkr1oelbejlc91v43sp89i9k7ph8orkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDm-J-SVLWtHc0OX0jpS24oYsQdEDN_4vU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416470617556-gkr1oelbejlc91v43sp89i9k7ph8orkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
